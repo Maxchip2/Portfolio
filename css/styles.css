@@ -1,0 +1,395 @@
+:root {
+    /*font*/
+    --font-family: 'Roboto', sans-serif;
+    /*colors*/
+    --color-font-main: #757575;
+    --main-dark: #212121;
+    --secondary-dark: #000000;
+    --main-light: #FFFFFF;
+    --accent-color: #2196F3;
+    --secondary-accent: #188CE8;
+    --primary-background: #2F303A;
+    --secondary-background: #F5F4FA;
+
+
+}
+
+/*global styles*/
+body {
+    font-family: var(--font-family);
+    color: var(--color-font-main);
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0;
+    color: var(--font-family)
+}
+
+.button {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    line-height: 0;
+}
+
+/*commom styles*/
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-dark);
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.section h2 {
+    padding-top: 0px;
+}
+
+.section {
+    padding: 95px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+
+}
+
+.list-item:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/*header*/
+.header {
+    background-color: var(--main-light);
+}
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+.header-nav {
+    width: 100%;
+    max-width: 294px;
+    margin-left: 93px;
+    margin-right: 331px;
+    
+}
+
+.div-logo {
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--secondary-dark);
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-dark);
+}
+
+.menu li:not(:last-of-type) {
+    margin-right: 50px;
+}
+
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
+.link-mail,
+.link-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    height: 16px;
+    width: 100%;
+    max-width: 135px;
+}
+
+.link-mail {
+    max-width: 122px;
+    margin-right: 50px;
+}
+
+.list-contact {
+    width: 100%;
+    margin-left: auto;
+    
+}
+
+.link-mail:hover,
+.link-mail:focus{
+    color: var(--accent-color);
+}
+
+.link-tel:hover,
+.link-tel:focus {
+    color: var(--accent-color);
+}
+/*герой*/
+
+.hero {
+    background-color: var(--primary-background);
+    
+}
+
+.container-hero {
+    padding-bottom: 200px;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-light);
+    width: 696px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+.hero-btn {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-light);
+    background-color: var(--accent-color);
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--secondary-accent);
+}
+
+/*main*/
+
+.section-benefits {
+    padding-bottom: 0;
+    padding-top: 95px;
+}
+
+.benefits-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-dark);
+    margin-bottom: 10px;
+}
+
+.list-benefits .list-item {
+    padding-right: 20px;
+    max-width: 270px;
+    width: 100%;
+}
+
+.list-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0px;
+    margin-bottom: 10px;
+    color: var(--main-dark);
+}
+
+.list-about .list-item {
+    width: 100%;
+    max-width: 370px;
+}
+
+.list-about .list-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.section-team 
+    {background-color: var(--secondary-background);
+    
+}
+
+.section-team p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+.member-card__body {
+    padding: 30px 15px;
+}
+
+.list-team .list-item {
+    width: 100%;
+    max-width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--main-light);
+    border-radius: 0 0 4px 4px;
+}
+
+.list-team .list-item img {
+    display: block;
+    width: 100%;
+    max-width 100%;
+    height: auto;
+}
+
+/*футер*/
+
+.footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-light);
+    background-color: var(--primary-background);
+}
+
+.container-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-item {
+    margin-bottom: 9px;
+}
+
+.current-adress {
+    color: var(--main-light);
+
+}
+
+.adress-list {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-mail:hover,
+.adress-mail:focus {
+    color: var(--accent-color);
+}
+
+.adress-tel:hover,
+.adress-t:focus {
+    color: var(--accent-color);
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.adress p {
+    margin-top: 0px;
+    margin-bottom: 9px;
+}
+
+.adress-list {
+    display: block;
+}
+
+/*PAGE PORTFOLIO*/
+.filtr-btn {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-dark);
+    background-color: var(--secondary-background);
+}
+
+.filtr-btn:hover,
+.filtr-btn:focus{
+    color: var(--main-light);
+    background-color: var(--accent-color);
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-dark);
+}
+
+
+.list.potfoloio-list {
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+
+.list.potfoloio-list li {
+    width: 100%;
+    max-width: 370px;
+    margin-left: 30px;
+}
+
+.filtr {
+    
+}
+
+
+
+
+
